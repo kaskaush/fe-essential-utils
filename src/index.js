@@ -1,3 +1,3 @@
-import { scrollToTop } from "../dom-utils";
+import { scrollToTop } from "./dom-utils";
 
 export { scrollToTop };
