@@ -1,3 +1,3 @@
-import { scrollToTop } from "./dom-utils";
+import { default as DOMUtils } from './dom-utils';
 
-export { scrollToTop };
+export { DOMUtils };
