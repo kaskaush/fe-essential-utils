@@ -1,3 +1,5 @@
-import { default as DOMUtils } from './dom-utils';
+import { DOMUtils } from './dom-utils';
+import { AccessibilityUtils } from './accessibility-utils';
+import { BrowserUtils } from './browser-utils';
 
-export { DOMUtils };
+export { DOMUtils, AccessibilityUtils, BrowserUtils };
