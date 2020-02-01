@@ -2,13 +2,13 @@
   "name": "fe-essential-utils",
   "version": "1.1.1",
   "description": "Essential utils for front-end development",
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "files": [
     "dist/*"
   ],
   "scripts": {
     "compile": "babel src -d dist",
-    "minify": "terser dist/index.js -c -m -o dist/index.min.js",
+    "minify": "node terser.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run compile && npm run minify"
   },
@@ -41,7 +41,9 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-prettier": "^3.1.2",
-    "prettier": "^1.19.1"
+    "filesize": "^6.0.1",
+    "prettier": "^1.19.1",
+    "terser": "^4.6.3"
   },
   "dependencies": {}
 }
