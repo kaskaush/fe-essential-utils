@@ -1,0 +1,37 @@
+{
+  "name": "fe-essential-utils",
+  "version": "1.0.0",
+  "description": "Essential utils for front-end development",
+  "main": "dist/index.min.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "compile": "babel src -d dist",
+    "minify":"terser dist/index.js -c -m -o dist/index.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run compile && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaskaush/fe-essential-utils.git"
+  },
+  "keywords": [
+    "utils",
+    "core-utils",
+    "essentials",
+    "essential-utils",
+    "fe-essential-utils"
+  ],
+  "author": "kaskaush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaskaush/fe-essential-utils/issues"
+  },
+  "homepage": "https://github.com/kaskaush/fe-essential-utils#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
+  }
+}
