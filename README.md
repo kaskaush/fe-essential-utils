@@ -5,6 +5,8 @@ fe-essential-utils is a utility library that comprises of most frequently used f
   - Accessibility Utils
   - Browser Utils
   - DOM Utils
+  - Payment card Utils
+  - Cookie Utils
 
 More coming soon!
 
@@ -31,7 +33,6 @@ const handleScrollToTop = () => {
 ### Todos
 
  - Add more utils
- - Build better minifier
 
 License
 ----

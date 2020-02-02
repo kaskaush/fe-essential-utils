@@ -21,7 +21,14 @@
     "core-utils",
     "essentials",
     "essential-utils",
-    "fe-essential-utils"
+    "fe-essential-utils",
+    "utility",
+    "utilities",
+    "browser utilities",
+    "accessibility utilities",
+    "dom utilities",
+    "payment card utilities",
+    "cookie utilities"
   ],
   "author": "kaskaush",
   "license": "MIT",
