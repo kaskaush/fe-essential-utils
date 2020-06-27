@@ -7,10 +7,10 @@ const BACK_DATED_EXPIRY = 'Thu, 01 Jan 1970 00:00:00 GMT';
  * @param {string} key key name of the cookie
  * @returns {string} the value if present else empty string
  */
-const getCookie = key => {
+const getCookie = (key) => {
     if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         const cookieSet = document.cookie.split('; ');
-        const cookieArray = cookieSet.filter(cookie => cookie.indexOf(`${key}=`) === 0);
+        const cookieArray = cookieSet.filter((cookie) => cookie.indexOf(`${key}=`) === 0);
         const cookie = cookieArray[0];
 
         return cookie
@@ -85,4 +85,4 @@ const createSessionCookie = (key, value, domain = '') => {
     return false;
 };
 
-export { createCookie, getCookie, deleteCookie, createSessionCookie };
+export const CookieUtils = { createCookie, getCookie, deleteCookie, createSessionCookie };
