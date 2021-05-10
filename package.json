@@ -7,6 +7,7 @@
     "dist/*"
   ],
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "compile": "babel src -d dist",
     "minify": "node terser.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -52,5 +53,8 @@
     "prettier": "^2.0.5",
     "terser": "^4.8.0"
   },
+  "resolutions": {
+    "lodash": "4.17.21"
+  }
   "dependencies": {}
 }
